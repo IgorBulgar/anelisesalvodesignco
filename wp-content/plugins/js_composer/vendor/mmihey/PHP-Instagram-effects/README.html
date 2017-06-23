@@ -1,0 +1,24 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="php-instagram-effects">PHP-Instagram-effects</h1>
+<p>PHP class for photo effects similar to Instagram</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-php">require &#39;src/Image/Filter.php&#39;;
+
+$image = imagecreatefromjpeg(&quot;/path/to/image.jpg&quot;);
+
+$filter = (new vcImageFilter($image))-&gt;aqua();
+
+header(&#39;Content-type: image/jpeg&#39;);
+imagejpeg($filter-&gt;getImage());
+</code></pre>
+<p>Examples of usage are in the <code>examples</code> directory. To generate example images, this bash snippet may be helpful:</p>
+<pre><code class="lang-shell">for f in *.php; do php $f &gt; ${f%.php}.png; done
+</code></pre>
+
+      </body>
+    </html>

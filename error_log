@@ -1,0 +1,31 @@
+[28-Apr-2017 18:51:22 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 16
+[28-Apr-2017 18:51:24 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 16
+[28-Apr-2017 18:52:27 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 17
+[28-Apr-2017 18:52:29 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 17
+[28-Apr-2017 18:52:44 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 20
+[28-Apr-2017 18:53:15 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 20
+[28-Apr-2017 18:53:40 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 20
+[28-Apr-2017 18:54:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 16
+[28-Apr-2017 18:54:00 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 20
+[28-Apr-2017 18:54:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 414
+[28-Apr-2017 18:54:48 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 20
+[28-Apr-2017 18:56:21 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 21
+[28-Apr-2017 18:56:23 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 21
+[28-Apr-2017 19:09:59 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 22
+[28-Apr-2017 19:10:04 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 22
+[28-Apr-2017 19:10:14 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 22
+[28-Apr-2017 19:10:16 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 22
+[28-Apr-2017 19:10:17 UTC] PHP Fatal error:  Class 'asdcSettings' not found in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions.php on line 22
+[28-Apr-2017 19:28:53 UTC] PHP Fatal error:  Cannot redeclare add_settings_pages_custom() (previously declared in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions-custom.php:10) in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/functions-custom.php on line 14
+[03-May-2017 13:23:55 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 62
+[03-May-2017 13:24:38 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 62
+[03-May-2017 13:25:04 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 62
+[03-May-2017 13:25:21 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 62
+[03-May-2017 13:38:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home1/anelise1/public_html/gffm/wp-includes/nav-menu.php on line 170
+[03-May-2017 13:38:47 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 64
+[03-May-2017 13:39:38 UTC] PHP Warning:  Illegal offset type in isset or empty in /home1/anelise1/public_html/gffm/wp-includes/nav-menu.php on line 170
+[03-May-2017 13:39:38 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 64
+[03-May-2017 13:41:04 UTC] PHP Fatal error:  Call to undefined function asdc_show_menu() in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 64
+[08-May-2017 08:46:18 UTC] PHP Warning:  Missing argument 1 for asdc_output_social_media(), called in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 66 and defined in /home1/anelise1/public_html/gffm/wp-content/plugins/asdc-core/core/asdc-functions.php on line 69
+[08-May-2017 08:46:18 UTC] PHP Warning:  Missing argument 3 for asdc_output_social_media(), called in /home1/anelise1/public_html/gffm/wp-content/themes/asdctdiamond/header.php on line 66 and defined in /home1/anelise1/public_html/gffm/wp-content/plugins/asdc-core/core/asdc-functions.php on line 69
+[08-May-2017 08:46:18 UTC] PHP Notice:  Undefined variable: class in /home1/anelise1/public_html/gffm/wp-content/plugins/asdc-core/core/asdc-functions.php on line 72

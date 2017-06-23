@@ -1,0 +1,484 @@
+/* -===[ BEG SPRITES BLOCK ]===- */
+.home-delivery-row {
+    height: 512px;
+    box-sizing: border-box;
+}
+.home-delivery-row .vc_column-inner {
+    padding-top: 0;
+}
+.home-delivery-row .shop-col {
+    text-align: right;
+    padding-right: 55px;
+    position: absolute;
+    left: 0;
+    top: 16%;
+}
+.home-delivery-row .delivery-col {
+    text-align: left;
+    padding-left: 55px;
+    position: absolute;
+    top: 16%;
+    right: 0;
+}
+.home-delivery-row .shop-col a,
+.home-delivery-row .delivery-col a {
+    width: 241px;
+    height: 241px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #d7d662;
+    border-radius: 100%;
+    color: #000;
+    position: relative;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home-delivery-row .shop-col a span,
+.home-delivery-row .delivery-col a span {
+    visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Fjalla One Regular", sans-serif;
+}
+
+.home-delivery-row .shop-col a span:before,
+.home-delivery-row .delivery-col a span:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
+.home-delivery-row .shop-col a:hover span,
+.home-delivery-row .delivery-col a:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.home-delivery-row .shop-col a:before,
+.home-delivery-row .delivery-col a:before {
+    background-image: url('sprites/gffm-sprite.png');
+    content: '';
+    width: 185px;
+    height: 185px;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+}
+
+.home-delivery-row .shop-col a:hover:before,
+.home-delivery-row .delivery-col a:hover:before {
+    opacity: .03;
+}
+.home-delivery-row .shop-col a:before {
+    background-position: -22px -21px;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 1500px 1500px;
+}
+.home-delivery-row .delivery-col a:before {
+    background-position: -250px -20px;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 1500px 1500px;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+    .home-delivery-row .shop-col {
+        padding-right: 22px;
+    }
+    .home-delivery-row .delivery-col {
+        padding-left: 22px;
+    }
+    .home-delivery-row {
+        height: 412px;
+    }
+    .home-delivery-row .shop-col {
+        width: 48%;
+        margin-right: 4%;
+        float: left;
+    }
+    .home-delivery-row .shop-col .vc_column-inner,
+    .home-delivery-row .delivery-col .vc_column-inner {
+        padding-top: 0 !important;
+    }
+    .home-delivery-row .delivery-col {
+        width: 48%;
+        margin-right: 0;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-delivery-row .shop-col a,
+    .home-delivery-row .delivery-col a {
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: #d7d662;
+        border-radius: 100%;
+        color: #000;
+        position: relative;
+        font-size: 18.6px;
+        text-transform: uppercase;
+    }
+    .home-delivery-row .shop-col a:before {
+        background-size: 1200px 1200px;
+        background-position: -6px -6px;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 160px;
+    }
+    .home-delivery-row .delivery-col a:before {
+        background-position: -175px 5px;
+        background-size: 1200px 1200px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .home-delivery-row {
+        height: 250px;
+    }
+    .home-delivery-row .shop-col a,
+    .home-delivery-row .delivery-col a {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+    }
+    .home-delivery-row .shop-col a:before {
+        background-position: 12px 12px;
+        background-size: 900px 900px;
+        width: 150px;
+        height: 150px;
+    }
+    .home-delivery-row .delivery-col a:before {
+        background-position: -135px 3px;
+        background-size: 900px 900px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .home-delivery-row .shop-col a,
+    .home-delivery-row .delivery-col a {
+        width: 100px;
+        height: 100px;
+    }
+    .home-delivery-row .shop-col a:before {
+        background-position: 8px 8px;
+        background-size: 600px 600px;
+        width: 100px;
+        height: 100px;
+    }
+    .home-delivery-row .delivery-col a:before {
+        background-position: -89px 3px;
+        background-size: 600px 600px;
+        width: 100px;
+        height: 100px;
+    }
+}
+/* -===[ END SPRITES BLOCK ]===- */
+
+
+/* -===[ BEG signUp BLOCK ]===- */
+
+.signUp {
+    background-color: #f5f5f5;
+    padding-top: 85px;
+}
+
+.signUp p {
+    font-family: 'Lora';
+    line-height: 1.7;
+}
+
+.signUp .imageSignup {
+    text-align: right;
+    padding-right: 28px;
+    position: relative;
+    z-index: 99;
+}
+
+.signUp .contentSignUp {
+    text-align: left;
+    padding: 30px 0 0 28px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+}
+
+.signUp .contentSignUp .vc_column-inner {
+    max-width: 493px;
+    display: inline-block;
+    text-align: center;
+}
+
+.signUp .imageSignup .vc_column-inner {
+    max-width: 454px;
+    display: inline-block;
+}
+
+.signUp .imageSignup .titlesImagesSignUp {
+    margin-bottom: 0;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.signUp .imageSignup .titlesImagesSignUp h2 {
+    margin: 0;
+    font-family: 'Fjalla One Regular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.signUp .imageSignup .titlesImagesSignUp h3 {
+    margin: 0;
+    font-family: 'Fjalla One Regular';
+}
+.signUp .imageSignup img{
+    width: 100%;
+}
+.signUp .imageSignup .positionImageSignUp {
+    line-height: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.signUp .imageSignup .positionImageSignUp p{
+    line-height: 0;
+}
+
+.signUp .imageSignup .positionImageSignUp:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: calc(100% - 46px);
+    width: calc(100% + 30px);
+    border: 3px solid #000;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.signUp .imageSignup .vc_column-inner .wpb_text_column{
+    text-align: center;
+}
+
+.signUp .positionContentSignUp {
+    margin-bottom: 0;
+}
+
+.signUp .buttonSignup {
+    margin-top: 35px;
+}
+
+.signUp .buttonSignup a {
+    max-width: 214px;
+    padding: 21px 0 33px 0;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Fjalla One Regular';
+    position: relative;
+}
+
+.signUp .buttonSignup a:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 100%;
+    height: 100%;
+    background-color: #a4955c;
+    z-index: 9;
+}
+
+.signUp .buttonSignup a i {
+    position: relative;
+    z-index: 12;
+    padding-right: 6px;
+    font-style: normal;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.signUp .buttonSignup a:hover {
+    padding: 27px 0;
+}
+
+.signUp .buttonSignup a:hover i {
+    padding-right: 0;
+}
+
+.signUp .buttonSignup a:hover:before{
+    top: 0;
+    left: 0;
+}
+
+.signUp .formSignUp {
+    margin-top: -75px;
+    padding: 90px 0 55px 0;
+    background-color: #d8d862;
+}
+
+.signUp .formSignUp h3 {
+    font-size: 1.9em;
+    font-family: "Fjalla One Regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.signUp .formSignUp:before {
+    content: '';
+    position: absolute;
+    height: 74px;
+    top: -74px;
+    left: 0;
+    width: 100%;
+    background-image: url("images/gffm-footer-repeat-bg.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.signUp .form-subscribe-sc {
+    text-align: center;
+}
+
+.signUp .form-subscribe-sc form{
+    display: inline-block;
+}
+
+.signUp .form-subscribe-sc form:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.signUp .form-subscribe-sc form label{
+    float: left;
+    width: auto;
+    margin-right: 6px;
+}
+
+.signUp .form-subscribe-sc form label:last-child {
+    margin-right: 0;
+}
+
+.signUp .form-subscribe-sc form label:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.signUp .form-subscribe-sc form label span {
+    text-transform: lowercase;
+}
+
+.signUp .form-subscribe-sc form label input:focus {
+    outline: none;
+}
+
+.signUp .form-subscribe-sc form .EMAIL-label input{
+    width: 208px;
+}
+
+.signUp .form-subscribe-sc form .ZIP-label input{
+    width: 62px;
+}
+
+.signUp .form-subscribe-sc form label span,
+.signUp .form-subscribe-sc form label span {
+    font-family: 'Fjalla One Regular';
+    font-size: .85em;
+    line-height: 0.8;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.signUp .form-subscribe-sc form label input,
+.signUp .form-subscribe-sc form label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0 0 0 5px;
+    margin: 0;
+    font-family: 'Lora';
+}
+
+.signUp .form-subscribe-sc form .yikes-easy-mc-submit-button {
+    float: right;
+    width: auto;
+    text-transform: lowercase;
+    border: 0;
+    margin: -5px 0 0 20px;
+    padding: 0;
+    background-color: transparent;
+    font-family: 'Fjalla One Regular';
+    font-size: .85em;
+}
+
+@media only screen and (max-width: 767px) {
+    .signUp .formSignUp {
+        padding-top: 0;
+        margin-top: -60px;
+    }
+    .signUp .imageSignup {
+        text-align: center;
+        margin-top: -10px;
+        padding: 0 20px;
+    }
+    .signUp .contentSignUp {
+        padding: 20px 20px 0 20px;
+    }
+    .signUp .contentSignUp .vc_column-inner {
+        max-width: 100%;
+    }
+    .signUp .formSignUp:before {
+        background-position: 30% 0;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .signUp .imageSignup .vc_column-inner {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .signUp .form-subscribe-sc form .EMAIL-label input {
+        width: 108px;
+    }
+}
+
+/* -===[ END signUp BLOCK ]===- */

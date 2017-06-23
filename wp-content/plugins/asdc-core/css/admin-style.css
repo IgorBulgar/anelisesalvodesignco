@@ -1,0 +1,260 @@
+/*
+ * ASDC Core Admin - Style
+ * File Version 1.0.3
+ * Plugin Version 1.0.2
+ */
+
+.asdc-button {
+    -webkit-transition: background.25s ease-in-out, color .25s ease-in-out;
+    transition: background.25s ease-in-out, color .25s ease-in-out;
+}
+body {
+    background: #fff;
+}
+h1.main-title {
+    margin: 0;
+    font-size: 2.6em;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: normal;
+    letter-spacing: 5px;
+}
+#asdc-settings-page form h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    background: #000;
+    color: #fff;
+    margin: 10px 0 0;
+    line-height: normal;
+    font-weight: normal;
+    padding: 4px 0 4px 8px;
+}
+#asdc-settings-page .form-table {
+    margin: 0;
+    font-size: 1em;
+    overflow: hidden;
+}
+#asdc-settings-page .form-table th {
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 10px 4px 14px;
+}
+#asdc-settings-page .form-table tr {
+    border-bottom: 1px solid #f0e8dc;
+}
+#asdc-settings-page .form-table td {
+    margin: 0;
+    padding: 8px 10px 0;
+    line-height: normal;
+}
+.asdc-builder-setting {
+    margin-bottom: 8px;
+}
+.asdc-builder-setting input[type=text] {
+    border: none;
+    box-shadow: none;
+    height: 30px;
+    font-size: 1em;
+    line-height: 30px;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    background: #f0e8dc;
+    color: #000;
+    margin: 0;
+    outline: 0;
+    width: 300px;
+    max-width: 100%;
+}
+.asdc-builder-setting input[type=text].tiny {
+    width: 100px;
+}
+.asdc-builder-setting input[type=text].small {
+    width: 150px;
+}
+.asdc-builder-setting input[type=text].large {
+    width: 500px;
+}
+.asdc-builder-setting label {
+    min-width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0 6px 0 0;
+    cursor: default;
+}
+.asdc-builder-setting label.small {
+    min-width: 50px;
+}
+.asdc-builder-setting label.medium {
+    min-width: 120px;
+}
+.asdc-builder-setting label.large {
+    min-width: 150px;
+}
+.asdc-builder-setting label.huge {
+    min-width: 200px;
+}
+.asdc-builder-setting p.description {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.asdc-builder-setting .image-preview {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 64px;
+}
+.asdc-builder-setting .image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.asdc-builder-setting .setting-tools {
+    display: inline-block;
+    vertical-align: middle;
+}
+.setting-tools .asdc-button {
+    display: block;
+    margin-bottom: 4px;
+}
+.setting-tools .asdc-button:last-child {
+    margin-bottom: 0;
+}
+.asdc-button {
+    display: inline-block;
+    cursor: pointer;
+    color: #f0e8dc;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    outline: 0;
+}
+.asdc-button.small {
+
+}
+.asdc-button.large {
+
+}
+.asdc-button.green {background: #26a65b;}
+.asdc-button.green:hover {background: rgba(38, 166, 91, 0.7);}
+.asdc-button.red {background: #ec644b;}
+.asdc-button.red:hover {background: rgba(236, 100, 75, 0.7);}
+.asdc-button.pink {
+    color: #000;
+    background: #f0e8dc;
+}
+.asdc-button.pink:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: rgba(240, 232, 220, 0.7);
+}
+.asdc-button.asdc-fa:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 4px;
+}
+.asdc-button.plus:before {content: "\f067";}
+.asdc-button.minus:before {content: "\f068";}
+.asdc-builder-cloning {
+    position: relative;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
+.asdc-builder-cloning .asdc-button.plus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.asdc-builder-sort,
+.asdc-builder-clone {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 4px 4px 28px;
+    border: 2px solid #f0e8dc;
+    background: rgba(255, 255, 255, 0.85);
+}
+.asdc-builder-sort {
+    padding-bottom: 0;
+}
+.asdc-builder-clone .asdc-button.minus {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+#asdc-settings-page .updated {
+    margin: 5px 0 10px;
+    background: #f5f5f5;
+    padding: 6px 0 6px 6px;
+    box-shadow: none;
+    border-left: 4px solid #26a65b;
+}
+#asdc-settings-page .updated p {
+    margin: 0;
+    padding: 0;
+}
+.asdc-setting-checkbox input {
+    margin: 0 4px 0 0;
+}
+.asdc-setting-switch {
+
+}
+.asdc-setting-switch .switch-wrap {
+    background: #6c7a89;
+    width: 76px;
+    border-radius: 31px;
+    position: relative;
+    height: 36px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background .25s ease-in-out;
+    transition: background .25s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+}
+.asdc-setting-switch.active .switch-wrap {
+    background: #2ecc71;
+}
+.asdc-setting-switch .switch-text {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    top: 8px;
+    left: 6px;
+    -webkit-transition: left .25s ease-in-out;
+    transition: left .25s ease-in-out;
+}
+.asdc-setting-switch .switch-text.on {left: -30px;}
+.asdc-setting-switch.active .switch-text.on {left: 10px;}
+.asdc-setting-switch .switch-text.off {left: 39px;}
+.asdc-setting-switch.active .switch-text.off {left: 79px;}
+.asdc-setting-switch .switch-button {
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    -webkit-transition: left .25s ease-in-out;
+    transition: left .25s ease-in-out;
+}
+.asdc-setting-switch.active .switch-button {left: 46px;}

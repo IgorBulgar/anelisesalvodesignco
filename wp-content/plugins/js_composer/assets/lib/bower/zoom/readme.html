@@ -1,0 +1,112 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>readme.md</title>
+      </head>
+      <body>
+        <h2 id="about-zoom">About Zoom</h2>
+<p>A small jQuery plugin for zooming images on mouseover or mousedown. See the <a href="http://jacklmoore.com/zoom/">project page</a> for documentation and a demonstration.  Released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>.</p>
+<p>To compile the .min.js file, run: <code>uglifyjs --comments &#39;/license:/&#39; &lt; jquery.zoom.js &gt; jquery.zoom.min.js</code> </p>
+<h2 id="changelog-">Changelog:</h2>
+<h5 id="v1-7-15-2016-2-8">v1.7.15 - 2016/2/8</h5>
+<ul>
+<li>Added touchend event, might fix #97 #75 #62.  Merges #100.</li>
+</ul>
+<h5 id="v1-7-14-2015-3-18">v1.7.14 - 2015/3/18</h5>
+<ul>
+<li>Fixes bug with passing the <code>target</code> property a selector, rather than a DOM node. Merges #73.</li>
+</ul>
+<h5 id="v1-7-13-2014-4-29">v1.7.13 - 2014/4/29</h5>
+<ul>
+<li>Destroy event does a better job of reseting back to the original state.</li>
+</ul>
+<h5 id="v1-7-12-2014-2-11">v1.7.12 - 2014/2/11</h5>
+<ul>
+<li>Set zoomed image&#39;s maxHeight to none, just in case a maxHeight has been defined for images in the CSS.</li>
+</ul>
+<h5 id="v1-7-11-2013-11-12">v1.7.11 - 2013/11/12</h5>
+<ul>
+<li>Added magnify property to allow scaling of the zoomed image.</li>
+</ul>
+<h5 id="v1-7-10-2013-10-16">v1.7.10 - 2013/10/16</h5>
+<ul>
+<li>Fixed bug relating to the size of the target element when using the target property (Fixes #35)</li>
+</ul>
+<h5 id="v1-7-9-2013-10-16">v1.7.9 - 2013/10/16</h5>
+<ul>
+<li>Added simple fallback for touch events (Fixes #37 #39)</li>
+<li>Renamed minified file to jquery.zoom.min.js to match jQuery&#39;s convention.</li>
+</ul>
+<h5 id="v1-7-8-2013-7-30">v1.7.8 - 2013/7/30</h5>
+<ul>
+<li>Will use data-src attribute if present before checking for the presence of an src attribute.</li>
+</ul>
+<h5 id="v1-7-7-2013-7-14">v1.7.7 - 2013/7/14</h5>
+<ul>
+<li>Restricted grab to just the left-mouse-button on mousedown</li>
+</ul>
+<h5 id="v1-7-6-2013-6-24">v1.7.6 - 2013/6/24</h5>
+<ul>
+<li>Fixed misnamed onZoomOut callback</li>
+</ul>
+<h5 id="v1-7-5-2013-6-19">v1.7.5 - 2013/6/19</h5>
+<ul>
+<li>Fixed a bug with absolutely or fixed position target elements</li>
+<li>Set the value of <code>this</code> to be zoom-image element for the onZoomIn and onZoomOut callbacks</li>
+</ul>
+<h5 id="v1-7-4-2013-6-18">v1.7.4 - 2013/6/18</h5>
+<ul>
+<li>Namespaced events to assist unbinding events.</li>
+<li>Added destroy event to unbind zoom events &amp; remove created img element. Example:
+  $(&#39;.example&#39;).trigger(&#39;zoom.destroy&#39;);</li>
+<li>Added onZoomIn and onZoomOut callbacks</li>
+</ul>
+<h5 id="v1-7-3-2013-6-10">v1.7.3 - 2013/6/10</h5>
+<ul>
+<li>Fixing mistake made in previous commit</li>
+</ul>
+<h5 id="v1-7-2-2013-6-6">v1.7.2 - 2013/6/6</h5>
+<ul>
+<li>Replaced new Image() with document.createElement(&#39;img&#39;) to avoid a potential bug in Chrome 27.</li>
+</ul>
+<h5 id="v1-7-1-2013-3-12">v1.7.1 - 2013/3/12</h5>
+<ul>
+<li>Replaced jQuery shorthand methods with on() in anticipation of jQuery 2.0</li>
+</ul>
+<h5 id="v1-7-0-2013-1-31">v1.7.0 - 2013/1/31</h5>
+<ul>
+<li>Added &#39;toggle&#39; behavior to zoom in/out on click.  Example: $(&#39;#example&#39;).zoom({ on:&#39;toggle&#39; });</li>
+<li>Removed the icon property in favor of just using CSS.</li>
+</ul>
+<h5 id="v1-6-0-2013-1-22">v1.6.0 - 2013/1/22</h5>
+<ul>
+<li>Created $.zoom which contains the positioning logic, so that users can write custom controls or event handling.</li>
+</ul>
+<h5 id="v1-5-0-2012-11-19">v1.5.0 - 2012/11/19</h5>
+<ul>
+<li>Added &#39;target&#39; property for specifying the element that displays the zoomed image.</li>
+</ul>
+<h5 id="v1-4-0-2012-9-29">v1.4.0 - 2012/9/29</h5>
+<ul>
+<li>Changed API &amp; added option to activate on click.</li>
+</ul>
+<h5 id="v1-3-0-2011-12-21">v1.3.0 - 2011/12/21</h5>
+<ul>
+<li>Added &#39;callback&#39; property that will execute a callback function once the image has loaded.</li>
+<li>Fixed a bug relating to the &#39;grab&#39; property</li>
+</ul>
+<h5 id="v1-2-0-2011-11-15">v1.2.0 - 2011/11/15</h5>
+<ul>
+<li>Fixed a positioning bug</li>
+</ul>
+<h5 id="v1-1-0-2011-11-15">v1.1.0 - 2011/11/15</h5>
+<ul>
+<li>Added &#39;grab&#39; property</li>
+</ul>
+<h5 id="v1-0-0-2011-11-11">v1.0.0 - 2011/11/11</h5>
+<ul>
+<li>First release</li>
+</ul>
+
+      </body>
+    </html>

@@ -1,0 +1,80 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="progresscircle-js">ProgressCircle.js</h1>
+<h3 id="a-progress-indicator-in-html5-canvas">A progress indicator in HTML5 canvas</h3>
+<p>homepage: <a href="http://qiao.github.com/ProgressCircle.js/">http://qiao.github.com/ProgressCircle.js/</a></p>
+<h2 id="usage">Usage</h2>
+<p>Download the file and include it in your page.</p>
+<pre><code class="lang-html">&lt;script type=&quot;text/javascript&quot; src=&quot;ProgressCircle.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>You should first create the canvas element in either HTML or Javascript, 
+and specify its width and height. </p>
+<pre><code class="lang-html">&lt;canvas id=&quot;my_canvas&quot; width=&quot;100&quot; height=&quot;40&quot;&gt;&lt;/canvas&gt;
+</code></pre>
+<p><strong>Note</strong>: you should NOT specify the size of the canvas in CSS.</p>
+<p>Then proceed with codes like the following ones.</p>
+<pre><code class="lang-javascript">var myCanvas = document.getElementById(&#39;my_canvas&#39;);
+
+var circle = new ProgressCircle({
+    canvas: myCanvas,
+});
+
+circle.addEntry({
+    fillColor: &#39;rgba(255, 255, 0, 0.5)&#39;,
+    progressListener: function() {
+        return THE_PROGRESS_VARIABLE_TO_LISTEN; // between 0 and 1
+    },
+});
+</code></pre>
+<p>You can add multiple progress indicators:</p>
+<pre><code class="lang-javascript">circle.addEntry({
+    fillColor: &#39;rgba(102, 255, 0, 0.5)&#39;,
+    progressListener: function() {return p1;},
+}).addEntry({
+    fillColor: &#39;rgba(255, 255, 0, 0.5)&#39;,
+    progressListener: function() {return p2;},
+}).addEntry({
+    fillColor: &#39;rgba(0, 0, 255, 0.5)&#39;,
+    progressListener: function() {return p3;},
+});
+</code></pre>
+<p>The call <code>start</code> to start the animation.</p>
+<pre><code class="lang-javascript">circle.start(33); // 33 is the interval(ms) between each update
+</code></pre>
+<p>If you want to stop the animation, call the <code>stop</code> method.</p>
+<pre><code class="lang-javascript">circle.stop();
+</code></pre>
+<h2 id="optional-parameters">Optional Parameters</h2>
+<pre><code class="lang-javascript">var circle = new ProgressCircle({
+    canvas: myCanvas, 
+    minRadius: 10, // Inner radius of the innermost circle
+    arcWidth: 3, // Width of each circle
+    gapWidth: 2, // Space between adjacent circles
+    centerX: 20, // X coordinate of the circle center
+    centerY: 20, // Y coordinate of the circle center
+    infoLineLength: 200, // Length of the info line
+    horizLineLength: 50, // Length of the horizontal info line
+    infoLineBaseAngle: Math.PI / 6, // Start angle of the info line
+    infoLineAngleInterval: Math.PI / 8, // Angle between info lines
+});
+
+circle.addEntry({
+    fillColor: &#39;rgba(255, 255, 0, 0.5)&#39;,
+    outlineColor: &#39;rgba(255, 255, 255, 0.5)&#39; // (Optional)
+    progressListener: function() {return p1;},
+    infoListener: function() {return text1;},// (Optional)
+});
+</code></pre>
+<h2 id="license">License</h2>
+<p><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p>
+<p>&copy; 2011-2013 Xueqiao Xu &lt;xueqiaoxu@gmail.com&gt;</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      </body>
+    </html>

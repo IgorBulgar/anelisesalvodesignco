@@ -1,0 +1,237 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>readme.md</title>
+      </head>
+      <body>
+        <p><a href="https://travis-ci.org/yikesinc/yikes-inc-easy-mailchimp-extender"><img src="https://travis-ci.org/yikesinc/yikes-inc-easy-mailchimp-extender.svg?branch=staging" alt="Build Status"></a>
+<a href="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/?branch=staging"><img src="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/badges/quality-score.png?b=staging" alt="Scrutinizer Code Quality"></a>
+<a href="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/?branch=staging"><img src="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/badges/coverage.png?b=staging" alt="Code Coverage"></a>
+<a href="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/build-status/staging"><img src="https://scrutinizer-ci.com/g/yikesinc/yikes-inc-easy-mailchimp-extender/badges/build.png?b=staging" alt="Build Status"></a></p>
+<h1 id="easy-forms-for-mailchimp">Easy Forms for MailChimp</h1>
+<p><a href=""><img src="https://img.shields.io/wordpress/plugin/dt/yikes-inc-easy-mailchimp-extender.svg" alt="WordPress"></a>
+<img src="https://img.shields.io/wordpress/plugin/r/yikes-inc-easy-mailchimp-extender.svg" alt="Rating">
+<a href="https://packagist.org/packages/yikesinc/yikes-inc-easy-mailchimp-extender"><img src="https://poser.pugx.org/yikesinc/yikes-inc-easy-mailchimp-extender/license" alt="License"></a>
+<img src="https://img.shields.io/wordpress/plugin/v/yikes-inc-easy-mailchimp-extender.svg" alt="WordPress plugin">
+<img src="https://img.shields.io/wordpress/v/yikes-inc-easy-mailchimp-extender.svg" alt="WordPress"></p>
+<p><strong>Latest Stable Beta Release Candidate</strong></p>
+<p>This is the development repo for the <a href="https://wordpress.org/plugins/yikes-inc-easy-mailchimp-extender/">Easy Forms for MailChimp</a> plugin by <a href="https://yikesinc.com/">YIKES, Inc.</a> where we work on new features and bug fixes.</p>
+<p>Feel free to beta test this plugin now, but remember, it&#39;s not a stable release.</p>
+<h4 id="minimum-requirements">Minimum Requirements</h4>
+<ul>
+<li>WordPress 3.8+</li>
+<li>PHP v5.3+</li>
+</ul>
+<h4 id="plugin-preview-screenshots">Plugin Preview Screenshots</h4>
+<p><a href="https://cloudup.com/cyfImk387Ez">Cloudup Gallery</a></p>
+<h4 id="documentation">Documentation</h4>
+<p>For full documentation, please visit <a href="https://yikesplugins.com/support/knowledge-base/product/easy-forms-for-mailchimp/">our Knowledge Base</a>.</p>
+<p>####### Integrations
+Easy Forms for MailChimp integrates well with many popular third party plugins for WordPress:</p>
+<ul>
+<li>WooCommerce</li>
+<li>Easy Digital Downloads</li>
+<li>BuddyPress</li>
+<li>BbPress</li>
+<li>Contact Form 7</li>
+<li>Visual Composer</li>
+</ul>
+<h4 id="questions-">Questions?</h4>
+<p>Have any questions? Feel free to open up an issue in the issue tracker and we&#39;ll get back to you as soon as possible.</p>
+<hr />
+
+<h4 id="grunt-js">Grunt.js</h4>
+<p>To develop with Grunt place Gruntfile.js file inside the plugin root during development (/wp-content/yikes-inc-easy-mailchimp-extender/). The paths inside Gruntfile.js are setup relative to the plugin root, so placing it anywhere else without changing the paths will cause an error.</p>
+<p>First, make sure you install the latest version of Grunt to the local project directory.</p>
+<pre><code class="lang-bash">$ npm install -g grunt -cli
+</code></pre>
+<pre><code class="lang-bash">$ npm install -g grunt
+</code></pre>
+<p>Finally, run the <a href="https://www.npmjs.com/package/grunt-auto-install">install</a> task to install the required dependencies.</p>
+<pre><code class="lang-bash">$ npm install
+</code></pre>
+<h5 id="shortcode">Shortcode</h5>
+<p><code>[yikes-mailchimp form=&quot;#&quot;]</code></p>
+<h5 id="full-list-of-shortcode-parameters">Full List of Shortcode Parameters</h5>
+<ul>
+<li>form - the ID of the form you want to display <em>(required)</em></li>
+<li>submit - the text of the submit button below the form <em>(optional - defaults to &quot;Submit&quot;)</em></li>
+<li>title - display the title above the form (1 or 0) <em>(optional - defaults to 0)</em></li>
+<li>description - display the description above the form (1 or 0) <em>(optional - defaults to 0)</em></li>
+</ul>
+<h5 id="api-key-constant">API Key Constant</h5>
+<ul>
+<li>A few users requested the ability to store their API key in a PHP constant, inside of wp-config.php. With version 6.1.2, users can now define a new constant inside of wp-config.php, <code>YIKES_MC_API_KEY</code>, and assign the API key there, which will then be used throughout the plugin. <em>Note: When you define the constant, you&#39;ll still need to head into the settings page and update the plugin options.</em></li>
+</ul>
+<p>Example:
+<code>define( &#39;YIKES_MC_API_KEY&#39;, &#39;12345679-us2&#39; );</code></p>
+<h5 id="css-ready-classes">CSS Ready Classes</h5>
+<h6 id="2-column-layout">2 Column Layout</h6>
+<ul>
+<li>field-left-half / field-right-half - assign this class to place the field in the left/right column of a 2 column form layout.</li>
+</ul>
+<h6 id="3-column-layout">3 Column Layout</h6>
+<ul>
+<li>field-left-third / field-right-third - assign this class to place the field in the left/right most column of a 3 column form layout.</li>
+</ul>
+<h6 id="2-3-4-colum-radio-buttons">2/3/4 Colum Radio Buttons</h6>
+<ul>
+<li>option-2/3/4-col - split the radio or checkbox options into 2, 3 or 4 columns</li>
+</ul>
+<h5 id="filters-hooks">Filters + Hooks</h5>
+<h6 id="filters">Filters</h6>
+<ul>
+<li><code>yikes-mailchimp-form-title</code> - Alter the output of the form title of the specified form. @params: $title, $form_id</li>
+<li><code>yikes-mailchimp-form-description</code> - Alter the output of the form description of the specified form. @params: $description, $form_id</li>
+<li><code>yikes-mailchimp-redirect-timer</code> - Alter the amount of time in <em>milliseconds</em> the user sees the success message before being redirected. Default: <code>1500</code> - @params: $time, $form_id</li>
+<li><code>yikes-mailchimp-redirect-url</code> - Alter the URL of the page that the user will be redirected to on a successful submission. @params: $url, $form_id, $page_data</li>
+<li><code>yikes-mailchimp-filter-before-submission</code> and <code>yikes-mailchimp-filter-before-submission-{$form_id}</code> - Catch the merge variables before they get sent over to MailChimp. @params: $merge_variables</li>
+<li><code>yikes-mailchimp-after-submission</code> and <code>yikes-mailchimp-after-submission-{$form_id}</code> - Catch the merge variables after they get sent over to MailChimp. @params: $merge_variables</li>
+<li><code>yikes-mailchimp-user-role-access</code> - Alter who can access this plugin page by capability. Default: <code>manage_options</code> - @params: $capability</li>
+<li><code>yikes-mailchimp-international-phone-pattern</code> - Alter the regex pattern for acceptable international phone number formats. Default: <code>&#39;[0-9,-,+]{1,}&#39;</code> - @params: $regex_pattern</li>
+<li><code>yikes-mailchimp-us-phone-pattern</code> - Alter the regex pattern for acceptable US phone number formats. Default: <code>^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$</code> - @params: $regex_pattern</li>
+<li><code>yikes-mailchimp-zip-pattern</code> - Alter the zip code regex pattern. Default: <code>\d{5,5}(-\d{4,4})?</code> - @params: $regex_pattern</li>
+<li><code>yikes-mailchimp-process-default-tag</code> - Alter the default form field value for text fields. @params: $default_value</li>
+<li><code>yikes-mailchimp-{$merge_tag}-label</code> - Alter the specified form field&#39;s or interest group&#39;s label text. @params: $label</li>
+<li><code>yikes-mailchimp-{$merge_tag}-description</code> - Alter the specified form field&#39;s or interest group&#39;s description text (note: if targeting an interest group, it will be the group_id instead of the merge tag). @params: $description_content, $form_id.</li>
+<li><code>yikes-mailchimp-address-{$type}-label</code> - Alter the field sub-label text for a specific address field (e.g. addr1). @params: $label</li>
+<li><code>yikes-mailchimp-form-submit-button</code> - Alter the submit button to your liking. @params: $submit_button, $form_id</li>
+<li><code>yikes-mailchimp-form-submit-button-text</code> - Alter the submit button text. Default: <code>submit</code> - @params: $submit_button_text, $form_id</li>
+<li><code>yikes-mailchimp-form-submit-button-classes</code> - Add additional classes to the submit button for further styling. @params: $classes, $form_id</li>
+<li><code>yikes-mailchimp-form-container-class</code> - Add additional classes to the <code>&lt;section&gt;</code> element container that wraps the form. @params: $class_name, $form_id</li>
+<li><code>yikes-mailchimp-form-class</code> - Add additional classes to <code>&lt;form&gt;</code> element of your opt-in form. @params: $class_name, $form_id</li>
+<li><code>yikes-mailchimp-front-end-form-action-links</code> - Add custom front end action links alongside Edit Form, Customize Form etc. @params: $form_action_links, $form_id, $form_name</li>
+<li><code>yikes-mailchimp-custom-default-value-tags</code> - Define your own custom pre-defined tags to populate the default value fields with - these tags appear in the modal. @params: $pre_defined_tags_array</li>
+<li><code>yikes-mailchimp-parse-custom-default-value</code> - Process your custom default merge tag into a custom value to populate the form field with (note: Goes hand in hand with <code>yikes-mailchimp-custom-default-value-tags</code> filter). @params: $default_tag</li>
+<li><code>yikes-mailchimp-field-data</code> - Filter form field data such as placeholder, label, etc. @params: $field_array, $field, $form_id</li>
+<li><code>yikes-mailchimp-subscriber-count-value</code> - Alter the returned value for the total subscriber count of a given MailChimp list. @params: $subscriber_count</li>
+<li><code>yikes-mailchimp-frontend-content</code> - Custom content filter for this plugin to prevent others from hooking in where not wanted.</li>
+<li><code>yikes-mailchimp-recaptcha-parameters</code> - Alter any of the possible reCAPTCHA shortcode parameters. @params: $recaptcha_parameter_array, $form_id</li>
+<li><code>yikes-mailchimp-preloader</code> - Add a custom preloader image. Default: WordPress&#39;s wpspin_light.gif. @params: $url_to_spinner_gif</li>
+<li><code>yikes-mailchimp-update-email-subject</code> - Filter the subject line for the email that is generated and sent when a user needs to update their subscription info. @params: $email_subject</li>
+<li><code>yikes-mailchimp-update-email-content</code> - Filter the content of the email that is generated and sent when a user needs to update their subscription info. @params: $email_body</li>
+<li><code>yikes-mailchimp-success-response</code> - Alter <em>any</em> success response text. @params: $response_text, $form_id, $submitted_form_variables</li>
+<li><code>yikes-mailchimp-default-country-value</code> - Alter the default country selected in the country dropdown. Default: <code>US</code> - @params: $country_slug</li>
+<li><code>yikes-mailchimp-recaptcha-required-error</code> - Filter the error displayed back to the user when an error occurs during the reCAPTCHA submission process. @params: $error_text, $form_id</li>
+<li><code>yikes-mailchimp-sslverify</code> - Toggle sslverify on/off when attempting to validate your API key with the MailChimp API servers. Default: <code>true</code> (on) - @params: $use_ssl</li>
+<li>Version 6.3.0:</li>
+<li><code>yikes-mailchimp-success-double-optin-response</code> - Filter the &quot;Success: Double opt-in&quot; custom message. @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-success-single-optin-response</code> - Filter the &quot;Success: Single opt-in&quot; custom message. @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-success-resubscribed-response</code> - Filter the &quot;Success: Re-subscriber&quot; custom message. @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-user-already-subscribed-link-text</code> - Filter the &quot;Success: Re-subscriber with link to email profile update message&quot; custom message. @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-general-error-response</code> - Filter the &quot;Error: General&quot; custom message. @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-user-already-subscribed-text</code> - Filter the &quot;Error: Re-subscribers not permitted&quot; custom message (note: this replaced <code>yikes-mailchimp-user-already-subscribed-error</code>). @params: $message, $form_id</li>
+<li><code>yikes-mailchimp-filter-groups-before-submission</code> and <code>yikes-mailchimp-filter-groups-before-submission-{$form_id}</code> - Filter the interest groups before they&#39;re submitted. @params: $groups, $form_id</li>
+<li><code>yikes-mailchimp-address-2-required</code> - Change the address 2 field&#39;s <code>required</code> value. Default: <code>&#39;&#39;</code> (it is never required) - @params: $required, $form_id</li>
+<li><code>yikes-mailchimp-filter-subscribe-request</code> and <code>yikes-mailchimp-filter-subscribe-request-{$form_id}</code> - Filter all of the fields sent over to the MailChimp API (not just the form fields). @params: $subscribe_body, $form_id</li>
+<li><code>yikesinc_eme_default_api_version</code> - Filter the API version. Default: <code>3.0</code> - @params: $version</li>
+<li><code>yikesinc_eme_api_url</code> - Filter the URL used for a request to the MailChimp API. @params: $full_path, $path</li>
+<li><code>yikesinc_eme_api_user_agent</code> - Filter the user agent used in API request. @params: $user_agent</li>
+<li><code>yikesinc_eme_api_auth_headers</code> - Filter the authentication headers used in the API request. @params: $auth_headers, $api_version</li>
+<li><code>yikesinc_eme_api_headers</code> - Filter the headers used for a request to the MailChimp API. @params: $headers, $path, $method, $params</li>
+<li><code>yikesinc_eme_api_timeout</code> - Filter the timeout (in <em>seconds</em>) used when sending an API request. Default: <code>15</code> @params: $timeout</li>
+<li><code>yikesinc_eme_api_args</code> - Filter the arguments used for a request to the MailChimp API. @params: $args, $path, $method, $params</li>
+</ul>
+<h6 id="hooks">Hooks</h6>
+<ul>
+<li><code>yikes-mailchimp-form-submission</code> and <code>yikes-mailchimp-form-submission-{$form_id}</code> - Do something with the user email + form data on form submission. @params: $email, $merge_variables, $form_id, $notifications</li>
+<li><code>yikes-mailchimp-after-submission</code> and <code>yikes-mailchimp-after-submission-{$form_id}</code> - Do something with only the $merge_variables (note: these actions are fired off directly after <code>yikes-mailchimp-form-submission</code>).</li>
+<li><code>yikes-mailchimp-before-submission</code> and <code>yikes-mailchimp-before-submission-{$form_id}</code> - Do something with the $merge_variables before the API request. @params: $merge_variables</li>
+<li><code>yikes-mailchimp-after-form</code> - Do something after a form has been loaded. @params: $form_id</li>
+<li><code>yikes-mailchimp-before-checkbox</code> - Do something (e.g. output custom content) before the opt-in checkbox for all integrations. </li>
+<li><code>yikes-mailchimp-after-checkbox</code> - Do something (e.g. output custom content) after the opt-in checkbox for all integrations</li>
+<li><code>yikes-mailchimp-support-page</code> - Do something (e.g. output custom content) on the support page (note: we use this to add our support form for premium users).</li>
+<li><code>yikes-mailchimp-edit-form-section-links</code> - Add additional links to the edit form page next to &#39;Custom Messages&#39;.</li>
+<li><code>yikes-mailchimp-edit-form-sections</code> - Add custom section to the edit form page.</li>
+<li><code>yikes-mailchimp-edit-form-notice</code> - Hook to display a custom notice on the edit form page.</li>
+<li><code>yikes-mailchimp-shortcode-enqueue-scripts-styles</code> - Hook to enqueue custom scripts &amp; styles wherever the shortcode is being used. @params: $form_id</li>
+<li><code>yikes-mailchimp-additional-form-fields</code> - Define additional fields to add below all forms. @params: $form_data</li>
+<li><code>yikes-mailchimp-custom-form-actions</code> - Add custom action links on the manage forms page (alongside Edit, Duplicate, Shortcode, Delete). @params: $form_id</li>
+<li><code>yikes-mailchimp-list-form-fields-metabox</code> - Add additional content to the &#39;Form Fields&#39; metabox on the view list page.</li>
+<li><code>yikes-mailchimp-list-interest-groups-metabox</code> - Add additional content inside of the interest groups metabox on the view list page.</li>
+</ul>
+<h6 id="hooks-for-extensions">Hooks for Extensions</h6>
+<ul>
+<li><code>yikes-mailchimp-menu</code> - hook to add additional menu items inside of the &quot;Easy MailChimp&quot; menu item</li>
+<li><code>yikes-mailchimp-settings-field</code> - hook to register additional settings fields for add-ons</li>
+<li><code>yikes-mailchimp-ADDON-SLUG-options-path</code> - hook to load up a custom settings page</li>
+</ul>
+<h5 id="helper-shortcodes">Helper Shortcodes</h5>
+<p><strong>Display current number of subscribers</strong>
+<code>[yikes-mailchimp-subscriber-count form=&quot;1&quot;]</code></p>
+<p>Display the current number of subscribers for a given list. Pass in the form ID whos list you want to display. (also accepts list=&quot;mailchimp_list_id&quot;)</p>
+<p>If you want to use the snippet inside of your form description, you can exclude the form ID and list ID altogether, and the shortcode will reference the list associated with the displayed form.</p>
+<p>Example Form Description:
+Join the <code>[yikes-mailchimp-subscriber-count]</code> happy subscribers who receive our mailing list!</p>
+<p>which might display on the front end like:
+Join the 1,543 happy subscribers who receive our mailign list!</p>
+<h3 id="custom-edit-form-sections-api">Custom Edit Form Sections API</h3>
+<p>Since we&#39;ve built out a few add-ons to extend the base functionality, we&#39;ve also built out an API to allow users to rapidly define custom sections on the edit form screen. This allows you to assign additional data to your forms.</p>
+<p>We use this API extensively to build out additional sections on the edit form page.</p>
+<p>Example:</p>
+<p><em>First hook in to the proper locations, and attach a function:</em></p>
+<pre><code class="lang-php">add_action( &#39;yikes-mailchimp-edit-form-section-links&#39; , &#39;add_custom_section_link&#39; );
+add_action( &#39;yikes-mailchimp-edit-form-sections&#39; , &#39;render_custom_section&#39; );
+</code></pre>
+<p><em>Next , define your sections and fields by passing in a multi-dimensional array.</em></p>
+<pre><code class="lang-php">/* Add custom link to the links (next to fields &amp; custom messages) */
+public function add_custom_section_link() {
+    // creating a new link on the edit form page
+    Yikes_Inc_Easy_Mailchimp_Extender_Helper::add_edit_form_section_link( array(
+        &#39;id&#39; =&gt; &#39;custom-section&#39;, // section id
+        &#39;text&#39; =&gt; &#39;Custom Section&#39;, // the text that will display in the link
+        &#39;icon&#39; =&gt; &#39;admin-appearance&#39; // dashicon icon class
+    ) );
+
+    // creating a new link on the edit form page
+    Yikes_Inc_Easy_Mailchimp_Extender_Helper::add_edit_form_section_link( array(
+        &#39;id&#39; =&gt; &#39;custom-section-2&#39;, // section id
+        &#39;text&#39; =&gt; &#39;Custom Section 2&#39;, // the text that will display in the link
+        &#39;icon&#39; =&gt; &#39;admin-appearance&#39; // dashicon icon class
+    ) );
+}
+
+/* Add custom section associated with link created above */
+public static function render_custom_section() {
+    // defining a new section, associated with the link above
+    Yikes_Inc_Easy_Mailchimp_Extender_Helper::add_edit_form_section( array(
+        &#39;id&#39; =&gt; &#39;custom-section&#39;,  // section id (must match link id above)
+        &#39;main_title&#39; =&gt; &#39;Main Section Title&#39;, // title of the main block of this custom section
+        &#39;main_description&#39; =&gt; __( &#39;This is a custom description for the main section&#39; , &#39;test&#39; ),
+        &#39;main_fields&#39; =&gt; array(
+            array(
+                &#39;label&#39; =&gt; &#39;Custom Field #1&#39;, // label text for this field
+                &#39;placeholder&#39; =&gt; &#39;Placeholder Value&#39;,  // placeholder value for the input field
+                &#39;type&#39; =&gt; &#39;text&#39;, // type of field (text,select,checkbox,radio)
+                &#39;id&#39; =&gt; &#39;custom-field-1&#39;, // field id - determines how data is saved in database
+                // &#39;description&#39; =&gt; __( &#39;Testing custom description for field #1&#39; , &#39;test&#39; ), // field description
+            ),
+            array(
+                &#39;label&#39; =&gt; &#39;Custom Field #2&#39;, // label text for this field
+                &#39;placeholder&#39; =&gt; &#39;Placeholder Value #2&#39;, // placeholder value for the input field
+                &#39;type&#39; =&gt; &#39;text&#39;, // type of field (text,select,checkbox,radio)
+                &#39;id&#39; =&gt; &#39;custom-field-2&#39;, // field id - determines how data is saved in database
+                &#39;description&#39; =&gt; __( &#39;Testing custom description for field #2&#39; , &#39;test&#39; ), // field description
+            ),
+        ),
+        &#39;sidebar_title&#39; =&gt; &#39;Sidebar Section Title&#39;, // sidebar title of the sidebar section
+        &#39;sidebar_description&#39; =&gt; __( &#39;This is a custom description for the sidebar section&#39; , &#39;test&#39; ),
+        &#39;sidebar_fields&#39; =&gt; array(
+            array(
+                &#39;label&#39; =&gt; &#39;Dropdown Field&#39;,
+                &#39;type&#39; =&gt; &#39;select&#39;,
+                &#39;options&#39; =&gt; array(
+                    &#39;1&#39; =&gt; &#39;one&#39;,
+                    &#39;2&#39; =&gt; &#39;two&#39;,
+                    &#39;3&#39; =&gt; &#39;three&#39;,
+                ),
+                &#39;id&#39; =&gt; &#39;select-field&#39;,
+                &#39;description&#39; =&gt; __( &#39;this is a select field.&#39; , &#39;test&#39; ),
+            ),
+        ),
+    ) );
+}
+</code></pre>
+
+      </body>
+    </html>
